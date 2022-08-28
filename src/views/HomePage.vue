@@ -3,10 +3,11 @@
     
     <ion-content class="home-content" :fullscreen="true">
 
-      <side-menu style="z-index: 200;"/>
+      <side-menu style="z-index: 3;" />
 
       <div class="vertical-scroller" :class="'page-' + currentPage">
-        <div class="scroller-page"> <main-title /> </div>
+
+        <div class="scroller-page" style=""> <main-title /> </div>
 
         <ion-button color="warning" 
         class="scroller-button" :class="(currentPage == 1)? 'up' : 'down'"
@@ -14,7 +15,7 @@
           <ion-icon :icon="chevronDown" class="scroller-button-icon"></ion-icon>
         </ion-button>
 
-        <div class="scroller-page"> <main-presentation /> </div>
+        <div class="scroller-page"> <main-presentation style=""/> </div>
 
         <ion-button color="warning" 
         class="scroller-button" :class="(currentPage == 2)? 'up' : 'down'"

@@ -8,9 +8,9 @@
         @swiper="initSwiper"
         @slideChange="onSlideChange"
       >
-        <swiper-slide class="swiper-slide">Slide 1</swiper-slide>
-        <swiper-slide class="swiper-slide">Slide 2</swiper-slide>
-        <swiper-slide class="swiper-slide">Slide 3</swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
       </swiper>
     </div>
 
@@ -23,11 +23,14 @@ import { defineComponent, ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
+import PresentationSlide from './PresentationSlide.vue';
+
 export default defineComponent({
   name: 'MainPresentation',
   components: {
     Swiper,
     SwiperSlide,
+    PresentationSlide
   },
   setup() {
     const currentSlide = ref(0)

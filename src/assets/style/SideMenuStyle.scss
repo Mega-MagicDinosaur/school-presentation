@@ -36,7 +36,6 @@
     --y-mov: calc(var(--k) / var(--rad2) * -1.4);
 
     position: fixed;
-
     
     width: 280px;
     height: var(--x);
@@ -45,6 +44,8 @@
     left: calc(-60px + 2vw);
 
     background: #ffd633;
+
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--x)/2) 50%, 100% 100%, 0 100%);
 
     transform: rotate(90deg);
     transition: all .25s ease;
@@ -56,7 +57,8 @@
         top: 0px;
     }
 
-    .bottom-edge {
+    // other solution, deprecated but use later on browsers which do not support clip-path.
+    /*.bottom-edge {
         transform: rotate(45deg) translateX(var(--x-mov)) translateY(var(--y-mov));
 
         width: calc(var(--l));
@@ -68,7 +70,7 @@
         pointer-events: none; // disables hover
 
         cursor: default !important;
-    }
+    }*/
 }
 
 .sidemenu-close-button {

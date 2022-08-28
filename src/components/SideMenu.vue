@@ -2,7 +2,7 @@
   <div class="sidemenu-container">
     
     <div class="sidemenu-button" @click="onSidemenuButtonClick">
-      <div class="bottom-edge"></div>
+      <!-- <div class="bottom-edge"></div> deprecated solution, see stylesheet. -->
     </div>
       
     <div class="page-sidemenu" :class="(sidemenuState)? 'open' : 'closed'">
