@@ -1,8 +1,41 @@
 
-.title-page {}
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 
-.title-content {}
+.title-page {
+    height: 100%;
+}
 
-.title-container {}
+.title-content {
+    height: 100%;
+}
 
-.title {}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+
+    text-align: center;
+
+    max-width: 800px;
+    width: 60%;
+    min-width: 280px;
+
+    height: 10rem;
+
+    margin: auto;
+    padding: 0px 20px;
+
+    background: #ffcc00;
+    box-shadow: 8px 8px 0px 0px #ffd633;
+}
+
+.title {
+    font-size: calc(3rem + 1.5vw);
+    font-family: 'Bona Nova', serif;
+
+    color: #000000;
+}

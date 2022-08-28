@@ -1,23 +1,20 @@
 <template>
-  <ion-page class="presentation-page">
+  <div class="presentation-page">
     
-    <ion-content class="presentation-content">
-    </ion-content>
+    <div class="presentation-content">
+      <span>presentation page</span>
+    </div>
 
-  </ion-page>
+  </div>
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'MainPresentation',
-  components: {
-    IonContent,
-    IonPage,
-  }
+  components: {}
 });
 </script>
 
-<style scoped lang="scss" src=""></style>
+<style scoped lang="scss" src="../assets/style/MainPresentationStyle.scss"></style>

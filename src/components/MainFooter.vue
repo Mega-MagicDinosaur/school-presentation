@@ -1,10 +1,11 @@
 <template>
-  <ion-page class="footer-page">
+  <div class="footer-page">
     
-    <ion-content class="footer-content" :fullscreen="true">
-    </ion-content>
+    <div class="footer-content" :fullscreen="true">
+      <span>footer page</span>
+    </div>
 
-  </ion-page>
+  </div>
 </template>
 
 <script lang="ts">
@@ -13,10 +14,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'MainFooter',
-  components: {
-    IonContent,
-    IonPage,
-  }
+  components: {}
 });
 </script>
 

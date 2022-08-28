@@ -1,25 +1,21 @@
 <template>
-  <ion-page class="title-page">
+  <div class="title-page">
     
-    <ion-content class="title-content">
+    <div class="title-content">
       <div class="title-container">
         <span class="title">PCTO EXPO</span>
       </div>
-    </ion-content>
+    </div>
 
-  </ion-page>
+  </div>
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'MainTitle',
-  components: {
-    IonContent,
-    IonPage,
-  }
+  components: {}
 });
 </script>
 
