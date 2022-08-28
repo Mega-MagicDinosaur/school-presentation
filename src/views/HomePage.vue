@@ -3,9 +3,9 @@
     
     <ion-content class="home-content" :fullscreen="true">
 
-      <div class="vertical-scroller" :class="'page-' + currentPage">
-        <side-menu />
+      <side-menu style="z-index: 200;"/>
 
+      <div class="vertical-scroller" :class="'page-' + currentPage">
         <div class="scroller-page"> <main-title /> </div>
 
         <ion-button color="warning" 

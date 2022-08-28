@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
 
-    top: 50%;
     position: relative;
     transform: translateY(-50%);
+    transition: all .25s ease;
 
     text-align: center;
 
@@ -30,7 +30,24 @@
     padding: 0px 20px;
 
     background: #ffcc00;
-    box-shadow: 8px 8px 0px 0px #ffd633;
+
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        transform: translateY(-50%) scale(1.04);
+    }
+
+    &.active { 
+        box-shadow: 0px 0px 0px 0px #ffd633; 
+        transform: translateY(-50%) scale(1.04);
+        top: 40%;
+    }
+
+    &.inactive { 
+        box-shadow: 8px 8px 0px 0px #ffd633; 
+        top: 50%;
+    }
 }
 
 .title {
@@ -39,3 +56,33 @@
 
     color: #000000;
 }
+
+.title-dropdown {
+    position: relative;
+    transition: all .25s ease;
+
+    max-width: 800px;
+    width: 60%;
+    min-width: 280px;
+
+    height: 10rem;
+
+    margin: auto;
+    padding: 0px 20px;
+
+    background: #ffd633;
+
+    &.open { 
+        transform: translateY(-50%); 
+        top: 40%;
+    }
+
+    &.closed { 
+        transform: translateY(calc(-50% - 10rem)); 
+        top: 50%;
+    }
+}
+
+.dropdown-title {}
+
+.dropdown-paragraph {}

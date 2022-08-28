@@ -2,7 +2,7 @@
 .home-page {}
 
 .home-content {
-    --overflow: hidden;
+    --overflow: clip;
 }
 
 .vertical-scroller {
@@ -31,6 +31,8 @@
     left: 50%;
 
     transform: translateX(-50%);
+
+    z-index: 2;
 
     &.down { transform: translateX(-50%) translateY(calc(-100% - 20px)) rotate(0deg); }
 
