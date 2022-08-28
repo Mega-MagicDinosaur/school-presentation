@@ -4,6 +4,8 @@
     <ion-content class="home-content" :fullscreen="true">
 
       <div class="vertical-scroller" :class="'page-' + currentPage">
+        <side-menu />
+
         <div class="scroller-page"> <main-title /> </div>
 
         <ion-button color="warning" 
@@ -37,6 +39,7 @@ import { chevronDown } from 'ionicons/icons';
 import MainTitle from '../components/MainTitle.vue';
 import MainPresentation from '../components/MainPresentation.vue';
 import MainFooter from '../components/MainFooter.vue';
+import SideMenu from '../components/SideMenu.vue'
 
 export default defineComponent({
   name: 'HomePage',
@@ -47,7 +50,8 @@ export default defineComponent({
     MainPresentation,
     MainFooter,
     IonIcon,
-    IonButton
+    IonButton,
+    SideMenu
   },
   setup() {
     const currentPage = ref(0)

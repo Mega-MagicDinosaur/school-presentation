@@ -3,7 +3,7 @@
     
     <div class="title-content">
       <div class="title-container">
-        <span class="title">PCTO EXPO</span>
+        <span class="title">PCTO</span>
       </div>
     </div>
 

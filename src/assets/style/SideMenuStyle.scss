@@ -1,0 +1,84 @@
+
+.sidemenu-container {
+    position: absolute;
+    height: 100% !important;
+}
+
+.page-sidemenu {
+    // change later width !!
+
+    position: absolute;
+
+    width: calc(12vw + 200px);
+    height: 100%;
+    z-index: 1;
+
+    background: #ffdb4d;
+
+    transition: transform .33s ease-in-out;
+
+    &.open {
+        transform: translateX(0px);
+    }
+
+    &.closed {
+        transform: translateX(calc(-12vw - 200px));
+    }
+
+    
+}
+
+.sidemenu-button {
+    --rad2: 1.414213562;
+    --x: calc(2vw + 40px);
+    --l: calc(var(--x) / var(--rad2));
+    --r: calc(var(--l) / 2);
+    --k: calc(var(--x) / 2 - var(--r));
+
+    --x-mov: calc(var(--k) / var(--rad2) * 3.4);
+    --y-mov: calc(var(--k) / var(--rad2) * -1.4);
+
+    position: absolute;
+
+    width: 200px;
+    height: var(--x);
+    left: calc(-60px + 2vw);
+
+    background: #ffd633;
+
+    transform: rotate(90deg);
+    transition: transform .25s ease;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(90deg) scale(1.1);
+    }
+
+    .bottom-edge {
+        transform: rotate(45deg) translateX(var(--x-mov)) translateY(var(--y-mov));
+
+        width: calc(var(--l));
+        height: calc(var(--l));
+        float: right;
+
+        background: var(--ion-background-color);
+
+        pointer-events: none; // disables hover
+
+        cursor: default !important;
+    }
+}
+
+.sidemenu-close-button {
+    --border-radius: 50px;
+
+    margin-right: 1vw;
+    margin-top: 1vw;
+
+    float: right;
+}
+
+.sidemenu-close-icon {
+    transform: rotate(45deg);
+}

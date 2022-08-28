@@ -8,13 +8,15 @@
 .vertical-scroller {
     height: 100%;
 
-    transition: transform 1s ease-in-out;
+    position: relative;
 
-    &.page-0 { transform: translateY(0%); }
+    transition: all 1s ease-in-out;
 
-    &.page-1 { transform: translateY(-100%); }
+    &.page-0 { top: 0vh; }
 
-    &.page-2 { transform: translateY(-200%); }
+    &.page-1 { top: -100vh; }
+
+    &.page-2 { top: -200vh; }
 }
 
 .scroller-page {
