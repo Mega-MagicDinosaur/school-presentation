@@ -8,9 +8,15 @@
         @swiper="initSwiper"
         @slideChange="onSlideChange"
       >
-        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
-        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
-        <swiper-slide class="swiper-slide"><presentation-slide /></swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide title="First Slide" 
+        :paragraphs="['first paragraph of slide number one', 'second paragraph of slide number one']"/>
+        </swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide title="Second Slide" 
+        :paragraphs="['first paragraph of slide number two', 'second paragraph of slide number two']"/>
+        </swiper-slide>
+        <swiper-slide class="swiper-slide"><presentation-slide title="Third Slide" 
+        :paragraphs="['first paragraph of slide number three', 'second paragraph of slide number three']"/>
+        </swiper-slide>
       </swiper>
     </div>
 

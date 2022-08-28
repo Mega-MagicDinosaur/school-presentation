@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 
 .slide-container {
-    position: absolute;
-    z-index: 3;
-    
-    width: 55vw;
-    height: 55vh;
+    width: 65vw;
+    height: 65vh;
 
-    background: red;
+    padding: calc(2rem + 1vw);
+
+    font-size: calc(1rem + 1.5vw);
+    font-family: 'Bona Nova', serif;
+
+    background: #ffd633;
+    color: #000000;
+    
+    border-radius: 4rem 2rem;
 }
 
 

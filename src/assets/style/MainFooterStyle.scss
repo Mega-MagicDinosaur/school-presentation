@@ -1,0 +1,23 @@
+
+.footer-page {
+    height: 100%;
+
+    position: relative;
+}
+
+.footer-content {
+    width: 80vw;
+    height: 80vh;
+
+    background: yellow;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-image {
+    width: 120px;
+    height: 120px;
+}

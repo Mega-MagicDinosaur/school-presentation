@@ -29,7 +29,7 @@
     margin: auto;
     padding: 0px 20px;
 
-    background: #ffcc00;
+    background: #ffd11a;
 
     cursor: pointer;
     z-index: 1;
@@ -39,13 +39,13 @@
     }
 
     &.active { 
-        box-shadow: 0px 0px 0px 0px #ffd633; 
+        box-shadow: 0px 0px 0px 0px #ffdb4d; 
         transform: translateY(-50%) scale(1.04);
         top: 40%;
     }
 
     &.inactive { 
-        box-shadow: 8px 8px 0px 0px #ffd633; 
+        box-shadow: 8px 8px 0px 0px #ffdb4d; 
         top: 50%;
     }
 }
@@ -70,7 +70,7 @@
     margin: auto;
     padding: 0px 20px;
 
-    background: #ffd633;
+    background: #ffdb4d;
 
     &.open { 
         transform: translateY(-50%); 
