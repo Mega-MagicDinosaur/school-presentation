@@ -2,28 +2,40 @@
   <div class="footer-page">
     
     <div class="footer-content" :fullscreen="true">
-      <span>Made With</span> <br>
 
-      <img class="icon-image" src="../assets/media/ionic_logo.png" alt="ionic">
-      <img class="icon-image" src="../assets/media/vue_logo.png" alt="vue">
+      <ion-grid class="footer-grid">
 
-      <span>Minor Contributions & Other Technologies</span> <br>
+        <ion-row class="grid-row"><ion-col class="grid-col title-col">Frameworks</ion-col></ion-row>
 
-      <img class="icon-image" src="../assets/media/html_css_js_logo.png" alt="HTML/css/js">
-      <img class="icon-image" src="../assets/media/sass_logo.png" alt="sass">
-      <img class="icon-image" src="../assets/media/typescript_logo.png" alt="type script">
-      <img class="icon-image" src="../assets/media/swiper_logo.png" alt="swiper">
+        <ion-row class="grid-row"> <!-- main -->
+          <ion-col class="grid-col"><footer-card name="ionic" image="ionic_logo.png" link="" class="footer-icon" /></ion-col>
+          <ion-col class="grid-col"><footer-card name="vue" image="vue_logo.png" link="" class="footer-icon"/></ion-col>
+        </ion-row>
 
-      <br>
+        <ion-row class="grid-row"><ion-col class="grid-col title-col">Libraries/Languages</ion-col></ion-row>
 
-      <img class="icon-image" src="../assets/media/git_logo.png" alt="git">
-      <img class="icon-image" src="../assets/media/eslint_logo.png" alt="eslint">
-      <img class="icon-image" src="../assets/media/npm_logo.png" alt="npm">
-      
-      <br>
+        <ion-row class="grid-row"> <!-- other libraries -->
+          <ion-col class="grid-col"><footer-card name="swiper" image="swiper_logo.png" link="" class="footer-icon"/></ion-col>
+          <ion-col class="grid-col"><footer-card name="sass" image="sass_logo.png" link="" class="footer-icon"/></ion-col>
+          <ion-col class="grid-col"><footer-card name="type script" image="typescript_logo.png" link="" class="footer-icon"/></ion-col>
+        </ion-row>
 
-      <img class="icon-image" src="../assets/media/jest_logo.png" alt="jest">
-      <img class="icon-image" src="../assets/media/cypress_logo.png" alt="cypress">
+        <ion-row class="grid-row"><ion-col class="grid-col title-col">Useful Tools</ion-col></ion-row>
+
+        <ion-row class="grid-row"> <!-- tools -->
+          <ion-col class="grid-col"><footer-card name="git" image="git_logo.png" link="" class="footer-icon"/></ion-col>
+          <ion-col class="grid-col"><footer-card name="eslint" image="eslint_logo.png" link="" class="footer-icon"/></ion-col>
+          <ion-col class="grid-col"><footer-card name="npm" image="npm_logo.png" link="" class="footer-icon"/></ion-col>
+        </ion-row>
+
+        <ion-row class="grid-row"><ion-col class="grid-col title-col">E2E/Unit Testing</ion-col></ion-row>
+
+        <ion-row class="grid-row"> <!-- testing -->
+          <ion-col class="grid-col"><footer-card name="jest" image="jest_logo.png" link="" class="footer-icon"/></ion-col>
+          <ion-col class="grid-col"><footer-card name="cypress" image="cypress_logo.png" link="" class="footer-icon"/></ion-col>
+        </ion-row>
+
+      </ion-grid>
 
     </div>
 
@@ -31,12 +43,19 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage } from '@ionic/vue';
+import { IonGrid, IonRow, IonCol } from '@ionic/vue';
 import { defineComponent } from 'vue';
+
+import FooterCard from './FooterCard.vue';
 
 export default defineComponent({
   name: 'MainFooter',
-  components: {}
+  components: {
+    FooterCard,
+    IonGrid, 
+    IonRow, 
+    IonCol
+  }
 });
 </script>
 

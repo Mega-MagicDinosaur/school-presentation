@@ -1,0 +1,36 @@
+
+.footer-card-container {
+    padding: 0%;
+}
+
+.footer-card {
+    width: 100%;
+    height: 100%;
+
+    float: left;
+
+    // for some reason, ion cards are shifted of 10px, this is offset
+    transform: translateX(-10px) translateY(-10px);
+}
+
+.footer-card-header {}
+
+.footer-card-image {
+    width: auto;
+
+    min-height: 4rem;
+    height: 8vw;
+    max-height: 6rem;
+}
+
+.footer-card-source {
+    cursor: pointer;
+
+    & .link { text-decoration: none; }
+}
+
+.footer-card-name {
+    text-align: center;
+}
+
+.footer-card-content {}
