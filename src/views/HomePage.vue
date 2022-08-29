@@ -3,7 +3,7 @@
     
     <ion-content class="home-content" :fullscreen="true">
 
-      <side-menu style="z-index: 3;" />
+      <side-menu style="z-index: 3;" @navButtonClicked="onNavButtonClicked" />
 
       <div class="vertical-scroller" :class="'page-' + currentPage">
 
@@ -62,10 +62,12 @@ export default defineComponent({
       (bridge[1] == currentPage.value)? bridge[0] : 
       currentPage.value;
     }
+    const onNavButtonClicked = (index: number) => currentPage.value = index
 
     return {
       currentPage,
       onScrollerButtonClick,
+      onNavButtonClicked,
 
       // icons
       chevronDown,

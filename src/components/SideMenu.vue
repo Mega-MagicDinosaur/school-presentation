@@ -10,6 +10,12 @@
       @click="onSidemenuButtonClick">
         <ion-icon :icon="add" class="sidemenu-close-icon"></ion-icon>
       </ion-button>
+
+      <div class="navigation-buttons">
+        <ion-button expand="full" @click="$emit('navButtonClicked', 0)" class="nav-button">Title</ion-button>
+        <ion-button expand="full" @click="$emit('navButtonClicked', 1)" class="nav-button">Presentation</ion-button>
+        <ion-button expand="full" @click="$emit('navButtonClicked', 2)" class="nav-button">Credits</ion-button>
+      </div>
     </div>
 
   </div>

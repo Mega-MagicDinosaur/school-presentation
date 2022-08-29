@@ -1,7 +1,11 @@
 <template>
   <div class="footer-page">
     
-    <div class="footer-content" :fullscreen="true">
+    <div class="footer-intro">
+      <span class="footer-title">Technologies and Frameworks Used</span>
+    </div>
+
+    <div class="footer-content">
 
       <ion-grid class="footer-grid">
 
